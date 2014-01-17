@@ -10,6 +10,54 @@
     android:orientation="vertical"
     tools:context=".HostActivity" >
     
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:weightSum="2"
+	    android:orientation="horizontal"
+	    android:layout_marginBottom = "20dp">
+        
+        <Button
+	        android:id="@+id/btn_go_to_sensing"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="#00000000"
+	        android:text="@string/btn_go_to_sensing"
+	        android:textColor="#0079B0"
+	        android:textStyle="bold|italic"
+	        android:textSize="16sp"
+	        android:onClick="goToSensing"		 
+        	/>
+        
+        <Button
+	        android:id="@+id/btn_change_ap"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="#00000000"
+			android:text="@string/btn_change_ap" 
+			android:textStyle="bold|italic"
+			android:textColor="#0079B0"
+			android:textSize="16sp"
+			android:onClick="changeAP"
+	        />
+        
+        
+    </LinearLayout>
+        
+    
+    <TextView
+        android:id="@+id/text_connected_ap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AP"
+		android:textColor="#0079B0"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:typeface="sans"
+        android:layout_marginBottom = "20dp" />
+    
     <TextView
         android:id="@+id/text_host_title"
         android:text="@string/title_guest_list"
@@ -24,6 +72,12 @@
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
         android:background="#0079B0"/>
+    
+    <ListView
+        android:id="@+id/guest_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
     
 
 </LinearLayout>

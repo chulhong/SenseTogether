@@ -4,12 +4,24 @@
     <string name="app_name">SenseTogether</string>
     <string name="host_name">Create room</string>
     <string name="action_settings">Setting</string>
-    
     <string name="standalone_sensing">Standalone sensing</string>
     <string name="create_room">Create a room</string>
     <string name="join_room">Join a room</string>
-    
     <string name="title_activity_host">HostActivity</string>
     <string name="title_guest_list">Guest list</string>
-
+    <string name="title_activity_guest">GuestActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btn_go_to_sensing">GO TO SENSNIG</string>
+    <string name="btn_change_ap">CHANGE AP</string>
+    <string name="title_activity_sensor_config">SensorConfigActivity</string>
+    <string name="sensor_accelerometer">Accelerometer</string>
+    <string name="sensor_gyroscope">Gyroscope</string>
+    <string name="delay_category">Delay category</string>
+    
+    <string-array name="delay_array">
+        <item>Fastest</item>
+        <item>Game</item>
+        <item>UI</item>
+        <item>Normal</item>
+    </string-array>
 </resources>

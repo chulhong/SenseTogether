@@ -8,6 +8,9 @@
 package com.cjmch.sensetogether;
 
 public final class R {
+    public static final class array {
+        public static final int delay_array=0x7f060000;
+    }
     public static final class attr {
     }
     public static final class dimen {
@@ -22,31 +25,50 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
-        public static final int purple_button=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f080004;
-        public static final int btn_create_room=0x7f080002;
-        public static final int btn_join_room=0x7f080003;
-        public static final int btn_standalone_sensing=0x7f080001;
-        public static final int text_host_title=0x7f080000;
+        public static final int action_settings=0x7f09000c;
+        public static final int btn_change_ap=0x7f090001;
+        public static final int btn_create_room=0x7f090006;
+        public static final int btn_go_to_sensing=0x7f090000;
+        public static final int btn_join_room=0x7f090007;
+        public static final int btn_standalone_sensing=0x7f090005;
+        public static final int checkbox_accelerometer=0x7f090008;
+        public static final int checkbox_gyroscope=0x7f09000a;
+        public static final int guest_list_view=0x7f090004;
+        public static final int spinner_accelerometer_delay=0x7f090009;
+        public static final int spinner_gyroscope_delay=0x7f09000b;
+        public static final int text_connected_ap=0x7f090002;
+        public static final int text_host_title=0x7f090003;
     }
     public static final class layout {
-        public static final int activity_host=0x7f030000;
-        public static final int activity_main=0x7f030001;
+        public static final int activity_guest=0x7f030000;
+        public static final int activity_host=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int activity_sensor_config=0x7f030003;
     }
     public static final class menu {
-        public static final int host=0x7f070000;
-        public static final int main=0x7f070001;
+        public static final int guest=0x7f080000;
+        public static final int host=0x7f080001;
+        public static final int main=0x7f080002;
+        public static final int sensor_config=0x7f080003;
     }
     public static final class string {
         public static final int action_settings=0x7f050002;
         public static final int app_name=0x7f050000;
+        public static final int btn_change_ap=0x7f05000b;
+        public static final int btn_go_to_sensing=0x7f05000a;
         public static final int create_room=0x7f050004;
+        public static final int delay_category=0x7f05000f;
+        public static final int hello_world=0x7f050009;
         public static final int host_name=0x7f050001;
         public static final int join_room=0x7f050005;
+        public static final int sensor_accelerometer=0x7f05000d;
+        public static final int sensor_gyroscope=0x7f05000e;
         public static final int standalone_sensing=0x7f050003;
+        public static final int title_activity_guest=0x7f050008;
         public static final int title_activity_host=0x7f050006;
+        public static final int title_activity_sensor_config=0x7f05000c;
         public static final int title_guest_list=0x7f050007;
     }
     public static final class style {
@@ -71,10 +93,11 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
+        public static final int MainTheme=0x7f070002;
     }
 }
