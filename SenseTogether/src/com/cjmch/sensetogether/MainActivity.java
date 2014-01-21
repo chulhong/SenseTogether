@@ -11,7 +11,10 @@ import android.provider.Settings;
 import android.view.Menu;
 import android.view.View;
 
+import com.cjmch.sensetogether.config.Config;
+import com.cjmch.sensetogether.config.SensingMode;
 import com.cjmch.sensetogether.network.NetworkUtil;
+
 
 public class MainActivity extends Activity {
 
@@ -33,16 +36,17 @@ public class MainActivity extends Activity {
 	// UI functions
 	
 	public void performStandaloneSensing(View v) {
-		Intent intentHostActivity = new Intent(MainActivity.this, SensorConfigActivity.class);
-		startActivity(intentHostActivity);
+		Intent intent = new Intent(MainActivity.this, SensorConfigActivity.class);
+		intent.putExtra(Config.EXTRA_SENSING_MODE, SensingMode.STANDALONE.toString());
+		startActivity(intent);
 	}
 	
 	public void createRoom(View v) {
 		boolean isWifiEnabled = NetworkUtil.isWifiOn(this);
 		
 		if (isWifiEnabled) {
-			Intent intentHostActivity = new Intent(MainActivity.this, HostActivity.class);
-			startActivity(intentHostActivity);
+			Intent intent = new Intent(MainActivity.this, HostActivity.class);
+			startActivity(intent);
 		} else {
 			showWifiWarningDialog();
 		}
@@ -52,8 +56,8 @@ public class MainActivity extends Activity {
 		boolean isWifiEnabled = NetworkUtil.isWifiOn(this);
 		
 		if (isWifiEnabled) {
-			Intent intentHostActivity = new Intent(MainActivity.this, GuestActivity.class);
-			startActivity(intentHostActivity);
+			Intent intent = new Intent(MainActivity.this, GuestActivity.class);
+			startActivity(intent);
 		} else {
 			showWifiWarningDialog();
 		}		

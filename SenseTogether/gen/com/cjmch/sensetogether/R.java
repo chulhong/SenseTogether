@@ -27,19 +27,24 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000c;
-        public static final int btn_change_ap=0x7f090001;
-        public static final int btn_create_room=0x7f090006;
-        public static final int btn_go_to_sensing=0x7f090000;
-        public static final int btn_join_room=0x7f090007;
-        public static final int btn_standalone_sensing=0x7f090005;
-        public static final int checkbox_accelerometer=0x7f090008;
-        public static final int checkbox_gyroscope=0x7f09000a;
-        public static final int guest_list_view=0x7f090004;
-        public static final int spinner_accelerometer_delay=0x7f090009;
-        public static final int spinner_gyroscope_delay=0x7f09000b;
-        public static final int text_connected_ap=0x7f090002;
-        public static final int text_host_title=0x7f090003;
+        public static final int action_settings=0x7f090011;
+        public static final int btn_change_ap=0x7f090005;
+        public static final int btn_change_ap_guest=0x7f090001;
+        public static final int btn_change_sensing_activate=0x7f09000c;
+        public static final int btn_create_room=0x7f09000a;
+        public static final int btn_go_to_sensing=0x7f090004;
+        public static final int btn_join_room=0x7f09000b;
+        public static final int btn_standalone_sensing=0x7f090009;
+        public static final int btn_try_ip_request=0x7f090000;
+        public static final int checkbox_accelerometer=0x7f09000d;
+        public static final int checkbox_gyroscope=0x7f09000f;
+        public static final int guest_list_view=0x7f090008;
+        public static final int spinner_accelerometer_delay=0x7f09000e;
+        public static final int spinner_gyroscope_delay=0x7f090010;
+        public static final int text_connected_ap=0x7f090006;
+        public static final int text_connected_ap_guest=0x7f090002;
+        public static final int text_guest_connection_info=0x7f090003;
+        public static final int text_host_title=0x7f090007;
     }
     public static final class layout {
         public static final int activity_guest=0x7f030000;
@@ -58,6 +63,8 @@ public final class R {
         public static final int app_name=0x7f050000;
         public static final int btn_change_ap=0x7f05000b;
         public static final int btn_go_to_sensing=0x7f05000a;
+        public static final int btn_sensing_start=0x7f050010;
+        public static final int btn_sensing_stop=0x7f050011;
         public static final int create_room=0x7f050004;
         public static final int delay_category=0x7f05000f;
         public static final int hello_world=0x7f050009;
@@ -70,6 +77,8 @@ public final class R {
         public static final int title_activity_host=0x7f050006;
         public static final int title_activity_sensor_config=0x7f05000c;
         public static final int title_guest_list=0x7f050007;
+        public static final int try_ip_request=0x7f050013;
+        public static final int waiting_connection=0x7f050012;
     }
     public static final class style {
         /** 
